@@ -177,7 +177,31 @@ on utilise les types statiques pour la sécurité et la performance, et les type
 
 ---
 
-###
+### Interface 
+une interface est une structure qui impose un comportement standarisé à des classes, sans détailler leur implémentation.
+- (+) Définir un contrat commun : l'abstraction 
+- (+) favorise l'abstraction
+- (+) permet le polymorphisme : manip des objets via une interface commune
+- (+) autorise l'implementation multiple: une classe peut implementer + classes
+
+---
+
+### classes abstraite
+- Une classe abstraite est une base ou un modèle pour d'autres classes.
+- On ne peut pas créer directement un objet de cette classe.
+- Elle oblige les classes dérivées à fournir des comportements spécifiques.
+- avantages
+    - Fournissent un modèle commun.
+    - Permettent de partager du code entre les classes dérivées.
+    - Forcent les classes dérivées à implémenter certaines méthodes.
+    - Réduisent la duplication et améliorent la structure du code.
+- les classes abstraites soutiennent principalement le principe:
+    - O (Open/Closed Principale)
+        - Une classe doit etre ouverte à l'extension mais ferme à la modif
+    - L (Substitution de Liskov)
+        - Les objets d'une classe dérivée doivent pouvoir remplacer les objets de base sans alterer le comportement du programme.
+          
+---
 
 
 
