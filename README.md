@@ -113,3 +113,71 @@ la visibilité fait référence au niveau d'accès ou à la portée des membres 
 Restez minimaliste, utilisez private par defaut et exposez uniquement ce qui est strictement nécessaire pour garantir la sécurité et la maintenabilité du code.
 
 ---
+
+### Encapsulation 
+l'encapsulation est un principe fondamental de POO qui consiste à regrouper des données (champs) et des méthodes dans une classe, tout en controlant leur accès à l'aide de niveaux de visibilité.
+- elle permet de cacher les détails d'implémentaiton d'une classe tout en exposant une interface controlée.
+
+---
+
+### Avantages
+- les données sensibles sont protégées
+- l'accès est controlé via des interfaces claires et fiables
+- les détails internes restent cachés, ce qui améliore la maintenabilité et la sécurité du code.
+  
+---
+
+### Interface publique
+Elle sert à standardiser les comportements des classes tout en favorisant l'abstraction et le polymorphisme.
+
+
+---
+
+### Immuabilité
+l'immuabilité signifie qu'un objet ne peut pas etre modifier apres sa creation. Toute tentative de modification crée un nouvel objet au lieu de changer l'objet existant.
+
+- les avantages:
+    - evite les erreurs liées aux modifications
+    - favorise la sécurité des threads
+    - simplifie le débogage et la maintenace.
+
+---
+
+### Héritage
+l'heritage est un mecanisme qui permet à une classe (dérivée) de reutiliser et etender les fonctionnalités d'une autre classe (classe de base).
+
+- Reutilisation du code
+- extensibilité: ajouter de nouvelles fonctionnalités dans les classes dérivées
+- organistaion : structure clare grace aux relations entre les classes.
+
+---
+
+### Polymorphisme 
+le polymorphisme est la capacité d'une methode, d'une classe ou d'un objet à prendre plusieurs formes. il permet d'utiliser une meme interface ou methode pour des comportements differents.
+
+
+---
+
+### Type statique vs Dynamique
+- Type statique
+    - defini au moment de la compilation
+    - le type de variable ne change pas et doit etre declare explicitement
+    - les erreurs liées aux types sont detectées à la compilaiton
+    - (+) meilleure sécurité
+    - (+) améliore les performances
+    - (+) aide à detecter les erreurs tot
+      
+- Type dynamique
+    - defini au moment de l'execution
+    - le type peut changer et aucune verif n'est effectue  à la compilation
+    - (+) plus flexible
+    - (+) utilise pour travailler avec des API
+
+on utilise les types statiques pour la sécurité et la performance, et les types dynamiques uniquement lorsque c'est necessaire.
+
+---
+
+###
+
+
+
