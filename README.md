@@ -203,5 +203,54 @@ une interface est une structure qui impose un comportement standarisé à des cl
           
 ---
 
+### Impelementation override
+Le mot-clé override est utilisé pour redéfinir une méthode virtuelle ou abstraite dans une classe dérivée, permettant d'adapter ou d'étendre le comportement d'une classe de base.
 
+- Définir une méthode virtual ou abstract dans la classe de base :
+    - virtual : La méthode a déjà une implémentation, mais peut être modifiée dans les classes dérivées.
+    - abstract : La méthode n'a pas d'implémentation et doit être définie dans les classes dérivées.
+
+- Redéfinir cette méthode dans une classe dérivée avec override.
+
+---
+
+### le principe SOLID
+
+- Single Responsibility Principe
+    - les classes et les methodes ne doivent etre responsable que d'une chose. cela permet d'voir une grande cohésion
+- Open/Closed Principale
+    - open : le code doit etre ouvert aux extensions.
+    - Cloded : le code doit etre fermé aux modifications
+- Liskov Substitution Principale
+    - une classe derivée peut remplacer sa classe de base
+- Interface Segregation Principale
+    - 
+- Dependecy Inversion Principale
+
+
+---
+
+### Résumé
+- S : Une classe = Une responsabilité unique.
+- O : Ouvrir à l'extension, fermer à la modification.
+- L : Une classe dérivée peut remplacer sa classe de base.
+- I : Préférer des interfaces spécifiques aux besoins.
+- D : Dépendre d'abstractions, pas d'implémentations concrètes.
+
+---
+
+### les principes STUPID
+Les principes STUPID représentent des antipatterns en développement logiciel, c'est-à-dire des pratiques à éviter. Ces principes sont l'opposé des principes SOLID et conduisent à un code difficile à maintenir, tester et comprendre.
+
+- Singleton : Abus du Singleton, rendant le code rigide et difficile à tester.
+- Tight Coupling : Couplage fort entre les classes, limitant la flexibilité.
+- Untestability : Code difficile à tester, souvent dû à un mauvais design.
+- Premature Optimization : Optimisation inutile qui complique le code.
+- Indescriptive Naming : Noms non clairs, rendant le code difficile à - comprendre.
+- Duplicate Code : Répétition de code, augmentant les risques de bugs.
+
+
+- Éviter les pratiques STUPID permet de créer un code clair, modulaire, et maintenable, ce qui est renforcé par l'application des principes SOLID.
+
+---
 
