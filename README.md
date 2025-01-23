@@ -157,7 +157,11 @@ L’**héritage** permet :
 ---
 
 ### **Polymorphisme**
-Le **polymorphisme** permet à une méthode, une classe ou un objet de prendre plusieurs formes via une interface commune.  
+Le **polymorphisme** permet à des objets de differentes classes d'etre traités de manière uniforme en utilisant une interface ou une classe commune.  
+- flexible : permet de remplacer des classes par d'autes sans modifier le code existant
+- reutilsable : reduit la duplication du code dans une classe de base
+- modularité : facilite l'extension et l'evolution du systeme
+- simplicté : offre une maniere uniforme de manipuler differentes objets.
 
 ---
 
@@ -172,7 +176,10 @@ Le **polymorphisme** permet à une méthode, une classe ou un objet de prendre p
 
 ### **Interfaces**
 Une **interface** est une structure qui impose un comportement standardisé.  
-- Favorise l’abstraction et le polymorphisme.  
+- c'est a dire un contrat qui impose à une classe d'implementer des methodes ou propriètés spécifiques.
+- le polymorphisme : les objets de classes differentes peuvent etre manipulés via une interface commune.
+- la flexibilité : plusieurs classes peuvent etre implementer
+- decouplage : separations des comportements des classes concrètes 
 
 ---
 
