@@ -100,6 +100,7 @@ Une **agrégation** est une relation entre deux classes où :
 ---
 
 ### **Visibilité**
+- la visibilité determine quelles parties du programme peuvenet accéder à ces membres ou classes.
 - **Public** : Accessible partout.  
 - **Private** : Accessible uniquement dans la classe.  
 - **Protected** : Accessible dans la classe et ses dérivées.  
@@ -144,7 +145,8 @@ Un objet **immutable** ne peut pas être modifié après sa création.
 ### **Héritage**
 L’**héritage** permet :  
 - La réutilisation du code.  
-- L’extensibilité des classes dérivées.  
+- L’extensibilité des classes dérivées.
+- est un mecanisme qui permet à une classe (dérivée) de reutiliser les fonctionnalités d'une autre classe (classe base). 
 
 ---
 
@@ -154,46 +156,70 @@ Le **polymorphisme** permet à une méthode, une classe ou un objet de prendre p
 ---
 
 ### **Types statiques vs dynamiques**
-- **Statique** : Défini à la compilation.  
-- **Dynamique** : Défini à l’exécution.  
+- **Statique** : Défini à la compilation. Le type de variable ne change pas.
+- (+) meilleur sécurité; améliore les performances; aide à detecter les erreurs tot. 
+- **Dynamique** : Défini à l’exécution. Le type peut changer.
+- (+) plus flexible; utiliser pour travailler avec des API
 - Utilisez les types statiques pour la sécurité et les performances.  
 
 ---
 
 ### **Interfaces**
-Une **interface** impose un comportement standardisé.  
+Une **interface** est une structure qui impose un comportement standardisé.  
 - Favorise l’abstraction et le polymorphisme.  
 
 ---
 
 ### **Classes abstraites**
+- Est une base ou modèle pour d'autres classes.
 - Fournissent un modèle commun.  
-- Forcent les classes dérivées à implémenter certaines méthodes.  
+- Forcent les classes dérivées à implémenter certaines méthodes.
+- Les classes abstraites soutiennent principalement:
+    - OCP (Open/Closed Principale) : une classe doit etre ouverte à l'extention mais ferme à la modification.
+    - LSP ( Liskov Substitution Principale) : les objets d'une classe dérivée doivent pourvoir remplacer les objets de base sans alterer le comportement du programme.
+
+---
+
+### Implementation override
+- le mot-clé override est utilisé pour rédefinir une methode virtuelle ou abstraite dans une classe dérivée, permettant d'adapter ou d'etendre le comportemnet d'une classe de base.
+- Virtual : la methode a deja une implémentation, mais peut etre modifiée dans les classes dérivées.
+- abstrait : la méthode n'a pas d'implementation et doit etre definie dans les classes dérivées.
 
 ---
 
 ### **Principe SOLID**
-- **S** : Une responsabilité par classe.  
-- **O** : Ouvert à l’extension, fermé à la modification.  
-- **L** : Classe dérivée remplaçable.  
-- **I** : Interfaces spécifiques.  
-- **D** : Dépendre des abstractions.  
+- **S** : Une responsabilité par classe. ( *Single Responsibility Principe*)
+    - les classes et les methodes ne doivent etre responsables que d'une chose.
+    - Cela permet d'avoir une grande cohésion.
+- **O** : Ouvert à l’extension, fermé à la modification. (*Open/Closed Principal*)
+    - open : le code doit etre ouvert aux extensions
+    - closed : le code doit etre fermé aux modifications.
+- **L** : Classe dérivée remplaçable. (*Liskov Substitution Principale*)
+    - une classe derivée peut remplacer sa classe de base.
+- **I** : Interfaces spécifiques. (*Interface Segregation Principale*)
+- **D** : Dépendre des abstractions. (*Dependecy Inversion Principale*)
+  
 
 ---
 
 ### **STUPID**
+les principes STUPID representent des antipatterns en developpement logiciel, c'est à dire des pratiques à eviter. Ces principes sont l'opposé des principes SOLID et conduisent à un code difficile ) maintenir, tester et comprendre.
 Les antipatterns **STUPID** sont à éviter :  
-- **S** : Singleton abusif.  
-- **T** : Couplage fort.  
-- **U** : Code difficile à tester.  
-- **P** : Optimisation prématurée.  
-- **I** : Noms peu descriptifs.  
-- **D** : Code dupliqué.  
+- **S** : Singleton abusif.(*Singleton: rendant le code rigide et difficile à tester*)
+- **T** : Couplage fort.(*Tight Coupling: limite la flexibilité*)
+- **U** : Code difficile à tester.(*Untestabillity : du à un mauvais design*)  
+- **P** : Optimisation prématurée.(*Optimisation inutile qui complique le code*)  
+- **I** : Noms peu descriptifs.(*Indescriptive Naming: Noms non clairs, rendant le code difficle à comprendre*)
+- **D** : Code dupliqué. (*Repetition de code, augmentant les risques de bugs*)
+
+Eviter les pratiques STUPID permet de creer un code clair, modulaire et maintenanble, ce qui est renforcé par l'application des principes SOLID.
 
 ---
 
 ### **Modélisation UML**
-La **modélisation UML** est un outil visuel pour concevoir et documenter des systèmes logiciels.  
-- Clarité.  
+La **modélisation UML** est un outil visuel pour concevoir et documenter des systèmes logiciels. elle utilise des diagrammes variés pour representer la structure et le comportement d'un systeme ce qui est efficace pour un developpement organisé.
+
+- Clarité.
+- standarisation
 - Communication.  
 - Réduction des erreurs.  
