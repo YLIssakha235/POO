@@ -114,7 +114,11 @@ Utilisez **private** par défaut et exposez uniquement ce qui est nécessaire po
 ---
 
 ### **Encapsulation**
-- **Encapsulation** : Regrouper les données et méthodes dans une classe en contrôlant leur accès.  
+- **Encapsulation** : Regrouper les données et méthodes dans une classe en contrôlant leur accès.
+- comment cela fonctionne :
+  - 1) **visibilité**: utilisation de private, protected, public
+  - 2) **Methodes d'acces** : utilise (getters/setters), permettant de lire ou modifier les données de manière securisée.
+        
 - Avantages :  
   - Cacher les détails d'implémentation.  
   - Exposer une interface contrôlée.  
