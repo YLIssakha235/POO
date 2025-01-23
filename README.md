@@ -254,3 +254,14 @@ Les principes STUPID représentent des antipatterns en développement logiciel, 
 
 ---
 
+### Modelisation UML
+a modélisation UML est un outil visuel pour concevoir, comprendre et documenter des systèmes logiciels. Elle utilise des diagrammes variés pour représenter la structure et le comportement d’un système, et est essentielle pour une collaboration efficace et un développement organisé.
+
+- Clarité : Aide à comprendre les concepts complexes.
+- Standardisation : Fournit un langage universel pour les équipes.
+- Communication : Facilite la collaboration entre développeurs et parties prenantes.
+- Documentation : Sert de référence pour la maintenance future.
+- Réduction des erreurs : Permet d'identifier les problèmes avant le développement.
+
+
+---
