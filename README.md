@@ -222,4 +222,30 @@ La **modélisation UML** est un outil visuel pour concevoir et documenter des sy
 - Clarité.
 - standarisation
 - Communication.  
-- Réduction des erreurs.  
+- Réduction des erreurs.
+
+---
+
+### Patterns
+- Servent à resoudre des problèmes récurrents et à rendre le code modulaire, flexible, reutilisable et maintenable.
+- Pattern de création :
+    - singleton : garantit une seule instance d'une classe
+    - Factory Method : crée des objets sans les exposer
+    - Abstract Factory: Crée des familles compatibles
+    - Builder : construit des objets complexes étape par étape.
+- Pattern Structurels:
+    - Adapter : rend compatibles deux interfaces
+    - Bridge : sépare abstraction et implémentaiton
+    - Composite : Traite des groupes d'objets comme un seul
+    - Decorator : Ajoute des fonctionnalités sans modifier la structure.
+- Patterns comportementaux:
+    - Oberser : met à jour les objets dependants
+    - Strategy : permet de changer l'algorithme dynamiquement.
+    - State : modifie le comportement d'un objet selon son état
+    - command: encapsule une requete pour une execution flexible
+- Patterns Architectiraux :
+    - MVC : sepate donnees, interface, et logique utilisateur.
+    - MVVM : Simplifie le lien entre interface et logique.
+    - Layered Architecture : organise en couches (ex: presentation, logique, donnees)
+    - event-Driven: base sur des declenchements d'evenements.
+    - 
