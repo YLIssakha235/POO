@@ -85,7 +85,9 @@ L’**instanciation** consiste à créer plusieurs instances d'une classe. Chaqu
 ### **Agrégation**
 Une **agrégation** est une relation entre deux classes où :  
 - Une classe "contenante" contient une référence à une ou plusieurs instances d'une autre classe ("contenue").  
-- Leur cycle de vie est indépendant.  
+- Leur cycle de vie est indépendant.
+- la destruction de l'objet "contenant" n'entraine pas la destruction des objets "contenus".
+- comme la creation d'une voiture qui contient un moteur. Ainsi moteur peut exister sans la voiture.
 
 ---
 
